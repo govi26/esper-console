@@ -20,21 +20,21 @@ class Dashboard extends Component {
     }
 
     return (
-      <Router>
+      <Router basename={path}>
         <div className="dashboard">
           <div className="sidebar">
             <h2>User's dashboard</h2>
             <hr />
             <ul>
-              <li><Link to={`${path}/devices`}>Devices</Link></li>
-              <li><Link to={`${path}/groups`}>Groups</Link></li>
+              <li><Link to="/devices">Devices</Link></li>
+              <li><Link to="/groups">Groups</Link></li>
             </ul>
           </div>
           <div className="content">
             <div className="content-container">
               <Switch>
-                <Route path={`${path}/devices`} render={() => <Devices {...this.props} />} />
-                <Route path={`${path}/groups`} render={() => <Groups  {...this.props} />} />
+                <Route path="/devices" render={() => <Devices {...this.props} />} />
+                <Route path="/groups" render={() => <Groups  {...this.props} />} />
               </Switch>
             </div>
           </div>
