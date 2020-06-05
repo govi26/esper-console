@@ -1,0 +1,29 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    outline: none;
+  }
+
+  input {
+    border: 2px solid rgba(107, 124, 147, 0.43);
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  input:focus {
+    border: 2px solid rgb(128, 189, 255);
+    box-shadow: rgba(0, 123, 255, 0.25) 0px 0px 0px 0.1rem;
+  }
+
+  button {
+    border: none;
+    background: rgb(7, 71, 166);
+    border-radius: 0.5rem;
+    color: #fff;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../styles/main.scss";
+
+.login {
+  align-items: center;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .login-detail {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 30%;
+    img {
+      width: 200px;
+    }
+
+    h2 {
+      color: #fff;
+      font-weight: 400;
+    }
+
+    .login-card {
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 1rem;
+      width: 100%;
+
+      .error-text {
+        background-color: #ff7676;
+        color: #fff;
+        border: 2px solid #ff2a2a;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        height: 30px;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
